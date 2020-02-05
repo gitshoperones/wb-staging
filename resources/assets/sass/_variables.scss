@@ -1,0 +1,64 @@
+// Body
+$body-bg: #ffffff;
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 1024px;
+$breakpoint-large: 1140px;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #353554;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #E7D8D1;
+$brand-dustypink: #E7D8D1;
+$brand-ivory: #f4e9e4;
+$brand-ivory2: #fcfaf7;
+$brand-danger: #FE5945;
+$brand-charcoal: #505254;
+$brand-gray-lighter: #afafaf;
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Ubuntu", sans-serif;
+$font-family-slab: "Josefin Slab";
+$font-family-raleway: "Raleway";
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+$primary-color: #373654; //purple
+$secondary-color: #E7D8D1; //pink
+$title-color: #000;
+
+// Background color
+$bg-grey: #F3F3F3;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+$big-banner: url('../images/banners/homepage.png');
+$small-banner: url('../images/banners/default.png');
+$handpick-banner: url('../images/banners/wedding_ring_bg.jpg');
+
+//bootstrap overrides
+$state-danger-bg:                $brand-danger;

@@ -1,0 +1,34 @@
+ul.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;
+    margin: 0 0 10px 25px;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.custom #expertiseTags_addTag,
+.custom .tagsinput,
+.tagsinput > div,
+.tagsinput input,
+.custom .ui-autocomplete-input {
+    width: 100%!important;
+}
+
+ul.ui-autocomplete {
+    padding: 0px 10px!important;
+}
+
+ul.ui-autocomplete li {
+    cursor: pointer
+}
+
+.required {
+    color: red;
+}

@@ -1,0 +1,22 @@
+.wb-facebook-btn {
+	background-color: #436098;
+	color: #fff;
+	@include wb-animate();
+
+	&:hover {
+		background-color: darken(#436098, 5%);
+		color: #fff;
+	}
+
+}
+
+.wb-google-btn {
+	background-color: #D85454;
+	color: #fff;
+	@include wb-animate();  
+
+	&:hover {
+		background-color: darken(#D85454, 5%);
+		color: #fff;
+	}
+}

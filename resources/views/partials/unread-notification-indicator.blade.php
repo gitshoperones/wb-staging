@@ -1,0 +1,1 @@
+<span class="unread-notification-indicator" id="{{ $notification->id }}" data-toggle="tooltip" title="Mark as read" style="cursor: pointer;"></span>

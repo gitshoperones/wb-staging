@@ -1,0 +1,3 @@
+<body>
+    {!! $notification->body !!}
+</body>

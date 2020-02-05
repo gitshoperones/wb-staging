@@ -1,0 +1,31 @@
+.progress {
+    position: relative;
+    background-color: #cec5c5!important;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: white;
+ }
+
+#nprogress .spinner {
+    z-index: 999999!important;
+}
+
+#nprogress .bar {
+    background: #FE5945!important;
+    z-index: 9999999!important;
+    height: 5px!important;
+}
+
+#nprogress .peg {
+    box-shadow: none!important;
+}
+#nprogress .spinner-icon {
+    border-top-color: #FE5945!important;
+    border-left-color: #FE5945!important;
+    width: 23px!important;
+    height: 23px!important;
+}

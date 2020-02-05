@@ -1,0 +1,281 @@
+.wd-blog-archive {
+	margin-bottom: 40px;
+}
+
+.blog {
+	&.carousel {
+		padding-bottom: 70px;
+		border-bottom: 1px solid transparentize(#000, .9);
+	}
+
+	.section-title {
+		font-family: $font-family-slab;
+		color: $brand-primary;
+		margin-bottom: 30px;
+		display: block;
+
+		&.sidebar {	
+			border-bottom: 1px solid #d6d6d6;
+			margin-top: 0;		
+		}
+	}
+
+	.entry {
+		margin-bottom: 50px;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	&.sidebar {
+		border: 1px solid #d6d6d6;
+		padding: 26px;
+	}
+
+	@media ( max-width: 992px ) {
+		.load-more {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.entry	{
+	.entry-title {		
+		color: $brand-primary;
+		margin: 20px 0;
+		font-family: $font-family-slab;
+		font-weight: 700;
+		display: block;
+
+		h3 {
+			font-size: 30px;	
+		}
+
+		h2 {
+			.single & {
+				font-size: 36px;
+				margin-bottom: 0;
+			}
+		}
+
+		.single & {
+			margin-bottom: 0;
+		}
+
+		.blog & {
+			font-size: 30px;
+		}
+
+		&.small {
+			font-size: 18px;
+		}
+
+		&.main {
+			font-weight: 600;
+		}
+	}
+
+	.entry-title.soon,
+	.entry-title.soon h3 {
+		margin-top: 0;
+	}
+
+	.entry-thumbnail {
+		width: 100%;
+	}
+
+	&.highlight {
+		position: relative;
+		margin-bottom: 50px;
+
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&0+38,0+38,0.65+100 */
+			background: -moz-linear-gradient(top, rgba(0,0,0,0) 1%, rgba(0,0,0,0) 38%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 38%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 38%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+		}
+
+		.entry-content {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 3;
+			width: 100%;
+			padding: 40px 50px;
+
+			@media ( max-width: 768px ) {
+				padding: 20px 30px;
+			}
+
+			@media ( max-width: 420px ) {
+				padding: 10px 20px;
+			}
+		}
+
+		.entry-title {
+			color: #fff;
+			margin: 10px 0 0 0;
+		}
+
+		.entry-title h3 {
+			margin: 0;   
+			max-width: 370px;
+			line-height: 1.2em;
+		}
+	}
+
+	.entry-cat {
+		text-transform: uppercase;
+		font-size: 12px;
+		background: $brand-primary;
+		color: #fff;
+		border-radius: 3px;
+		padding: 4px 7px; 
+		display: inline-block;
+		clear: both;
+		line-height: normal;
+		margin-bottom: 10px;
+
+		&.hot {
+			background: #d01d00;
+		}
+
+		&.orange {
+			background: #ff5e44;
+		}
+
+		.single & {
+			margin-bottom: 0;
+		}
+	}
+
+	.read-more {
+		margin-top: 30px;
+		display: block;
+		text-decoration: underline;
+	}
+
+	&.story {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 30px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		.entry-thumbnail {
+			max-width: 116px;
+			float: left;
+			margin-right: 15px;
+		}
+
+		.entry-title {
+			margin: 0;
+			line-height: 1.3em;
+		}
+
+		.entry-date {
+			color: #a0a0a0;
+		}
+	}
+
+	&.soon .col-xs-6 {
+		@media ( max-width: 420px ) {
+			width: 100%;
+		}
+	}
+
+	&.soon .entry-thumbnail {
+		@media ( max-width: 420px ) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.single & {
+		.entry-content {
+			margin-top: 40px;
+			font-size: 14px;
+			color: #000;
+		}
+
+		h3 {
+			font-size: 18px;
+			font-weight: 700;
+			font-family: $font-family-slab;
+		}
+	} 
+
+	p {
+		margin: 0 0 1.7em;
+		color: #000;
+	}	
+
+	.dropcap {
+		font-family: $font-family-slab;
+		font-size: 30px;
+		font-weight: 700;
+		color: #000;
+		line-height: 1;
+	}
+
+	blockquote {
+		margin: 50px 0 50px 50px;
+		font-size: inherit;
+		border-left: 4px solid #eeeeee;
+		font-style: italic;
+	}
+}
+
+.single {
+	margin-top: 80px;
+}
+
+.gallery-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 100px;
+
+	@media ( max-width: 420px ) {
+		display: block;
+	}
+
+	.item {
+		max-width: 25%;
+		padding: 11px;
+
+		@media ( max-width: 768px ) {
+			max-width: 50%;
+		}
+
+		@media ( max-width: 420px ) {
+			max-width: 100%;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.blog-contact {
+	font-size: 24px;
+	font-family: $font-family-slab;
+	margin: 50px 0 60px;
+
+	a {
+		font-size: 18px;
+		color: #c3c3c3;
+		padding: 10px;
+		margin-top: 10px;
+	}
+}

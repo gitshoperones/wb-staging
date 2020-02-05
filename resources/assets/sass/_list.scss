@@ -1,0 +1,98 @@
+.wb-numlist {
+  text-align: left;
+
+  li {
+    min-height: 200px;
+    margin-bottom: 30px;
+
+    &:after {
+      content: '';
+      clear: both;
+    }
+
+  }
+
+  :last-child {
+    border-bottom: 0px;
+  }
+
+  .wb-numlist-lead {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: $brand-primary;   
+    text-transform: uppercase;
+
+    @media ( min-width: 470px ) {
+       width: 60%; 
+    }
+
+    .num {
+      float: left;
+      font-weight: 100;
+      margin-right: 15px;
+      font-size: 50px;
+      color: $brand-primary;
+      margin-top: -10px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+      margin-bottom: 20px;
+    }
+  }
+
+  .wb-numlist-info {
+    margin-bottom: 80px;
+    text-align: center;
+
+    @media ( min-width: 470px ) {
+      text-align: left;
+    }
+
+    p {
+      font-size: 13.5px;
+      font-weight: 300;
+      color: $brand-primary;
+
+      @media ( min-width: 470px ) {
+         width: 60%; 
+      }
+    }
+
+    img {
+      max-width: 230px;
+      margin: auto;
+
+      @media ( min-width: 470px ) { 
+         float: right;
+         margin-top: -83px;
+      }
+    }
+  }
+
+  .reverse-list {
+    .wb-numlist-lead {  
+      @media ( min-width: 470px ) {
+         margin-left: auto;
+      }
+    }
+
+    .wb-numlist-info {
+      p {
+        @media ( min-width: 470px ) {
+          margin-left: auto;
+        }
+      }
+  
+      img {
+        @media ( min-width: 470px ) { 
+           float: left;
+        }
+      }
+    }
+  }
+
+}

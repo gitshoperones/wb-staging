@@ -1,0 +1,51 @@
+.skin-blue .main-header .navbar {
+	background-color: #363654;
+}
+
+.skin-blue .main-header .logo {
+	background-color: #363654;
+}
+.customFields .row {
+	position: relative;
+	background: #c3c3c3c3;
+    border-radius: 5px;
+    padding: 20px 0;
+	margin-bottom: 20px;
+}
+
+.customFields .btn_remove {
+	position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customFields .flabel {
+	display: block;
+}
+
+.customFields .bootstrap-tagsinput {
+	height: auto;
+	min-height: 34px;
+}
+
+.customFields .bootstrap-tagsinput .tag {
+	display: inline-block;
+	font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.wrapper {
+	overflow-y: hidden;
+}
+
+@media (min-width: 1200px){
+	.container {
+		width: auto;
+	}
+}

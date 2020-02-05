@@ -1,0 +1,28 @@
+.wb-contact-card {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
+  padding: 35px 30px;
+  margin-bottom: 33px;
+  background-color: #fff;
+  text-align: center;
+
+  .logo {
+    font-size: 33px;
+    color: #E7D8D2;
+  }
+
+  .name {
+    font-family: $font-family-slab;
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: $brand-danger;
+    .name {
+      color: #fff;
+    }
+  }
+
+  &:active {
+    background-color: $brand-danger;
+  }
+}

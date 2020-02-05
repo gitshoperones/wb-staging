@@ -1,0 +1,252 @@
+.user-setting-header {
+	display: flex;
+	justify-content: space-around;
+	background: $brand-primary;
+
+	.wb-btn-link {
+		border: 0;
+		color: #fff;
+
+		&:hover, &.active {
+			color: #FD604E;
+			text-decoration: none;
+		}
+	}
+}
+#wb-settings-block {
+	.wb-title {
+		border-bottom: none;
+		margin-bottom: 40px;
+	}
+
+	.nav-block {
+		border-bottom: 1px solid #dbdbdb;
+		margin-bottom: 40px;
+	}
+
+	.title {
+		font-family: $font-family-slab;
+		color: $brand-primary;
+		font-weight: 600;
+
+		.text-green {
+			color: #36A953;
+		}
+	}
+
+	.btn {
+		padding: 6px 22px;
+	}
+
+	input[type="submit"] {
+		padding: 10px 22px;
+	}
+
+	form {
+		label {
+			font-weight: 100;
+		}
+
+		small {
+			font-weight: 100;
+		}
+
+		input[type="text"], input[type="password"] {
+			// padding-left: 0px;
+			// font-size: 16px;
+			letter-spacing: 0.5px;
+			font-weight: 300;
+			color: $brand-primary;
+		}
+
+		.form-group {
+			margin-bottom: 42px;
+		}
+	}
+
+	.notification-container {
+		.title {
+			// margin-top: 37px;
+			margin-bottom: 14px;
+		}
+
+		.checkbox {
+			margin-top: 12px;
+			margin-bottom: 12px;
+
+			label {
+				font-size: 15px;
+			}
+		}
+
+		.radiobox {
+			margin-top: 5px;
+			margin-bottom: 5px;
+
+			label {
+				font-size: 15px;
+			}
+		}
+
+		.well {
+			margin-top: 15px;
+			margin-bottom: 48px;
+			padding: 8px 27px;
+			background-color: #F9F9F9;
+			border: none;
+			box-shadow: none;
+		}
+
+		.description-block {
+			font-weight: 100;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #E5E5E5;
+
+			p {
+				font-size: 15px;
+				margin-bottom: 25px;
+			}
+
+			.title-msg {
+				color: #36A953;
+				margin-bottom: 11px;
+				margin-top: 0px;
+				font-family: $font-family-slab;
+
+				.icon {
+					padding-right: 10px;
+					font-size: 22px;
+				}
+			}
+
+			.link {
+				color: $brand-danger;
+			}
+		}
+
+		.action-block {
+			font-weight: 100;
+			margin-top: 35px;
+			margin-bottom: 35px;
+
+			.wb-btn-orange {
+				height: 35px;
+				padding: 6px 22px;
+				margin-right: 13px;
+			}
+
+			.wb-btn-outline-danger {
+				height: 35px;
+				padding: 5px 22px;
+			}
+		}
+	}
+
+	.card-account-container {
+		margin-bottom: 80px;
+
+		.sort-block {
+			padding: 0px 0px 20px;
+
+			.btn {
+				margin-left: 6px;
+				padding: 2px 7px;
+				background-color: #fff;
+
+				&.selected {
+					border: 2px solid $brand-danger;
+				}
+			}
+		}
+
+		.account-card {
+			box-shadow: #b3b3b3 0px 0px 3px 0px;
+			margin-bottom: 30px;
+
+			.account-card-body {
+				padding: 20px;
+				background-color: #fff;
+				.name {
+					color: #A9A9A9;
+					font-weight: 100;
+					font-size: 12px;
+					margin-bottom: 2px;
+				}
+			}
+
+			.account-card-footer {
+
+				font-size: 12px;
+
+				&.bg-color-peach {
+					background-color: #E7D8D2;
+					padding: 12px 48px 12px 37px;
+					.wb-btn-separator {
+						color: #C9BAB3;
+					}
+				}
+
+				&.bg-color-violet {
+					background-color: #373554;
+					padding: 12px 68px 12px 63px;
+					color: #fff;
+					.wb-btn-separator {
+						color: #474564;
+					}
+				}
+
+				.right {
+					float: right;
+					color: $brand-danger;
+				}
+
+			}
+
+		}
+
+		.account-card-bordered {
+			border: 2px dashed #E8DBD3;
+
+
+			p {
+				font-size: 16px;
+				color: #939393;
+				font-weight: 100;
+			}
+
+			.add-button {
+				margin: auto;
+				height: 92px;
+				width: 92px;
+				border-radius: 50%;
+				background-color: #E3E3E3;
+				color: #939393;
+				text-align: center;
+				padding: 22px;
+
+				.icon {
+					font-size: 52px;
+					line-height: 0px;
+				}
+			}
+
+			&.credit {
+				height: 193px;
+				padding: 40px 0px 20px;
+
+				.add-button {
+					margin-bottom: 10px;
+				}
+			}
+
+			&.bank {
+				height: 245px;
+				padding: 60px 0px 20px;
+
+				.add-button {
+					margin-bottom: 42px;
+				}
+			}
+		}
+	}
+}

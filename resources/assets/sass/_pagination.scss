@@ -1,0 +1,18 @@
+.wb-pagination-block {
+	text-align: center;
+
+	.pagination > li > a, .pagination > li > span {
+		margin: 0px 5px;
+		border: 1px solid #353554;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: 100;
+	}
+
+	.pagination > li:first-child > span{
+		padding: 6px 21px !important;
+	}
+	.pagination > li:last-child > a {
+		padding: 6px 21px !important;
+	}
+}

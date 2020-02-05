@@ -1,0 +1,394 @@
+.wb-cover {
+	padding: 0;
+	margin-top: 83px;
+	text-align: center;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	padding-bottom: 20px;
+
+	@media ( max-width: $breakpoint-mobile ) {
+		margin-top: 20px;
+		padding-bottom: 15px;
+	}
+
+	#wb-single-quote & {
+		margin-top: 27px;
+	}
+
+	&.editOn {
+		/*border: 1px dashed #848598;*/
+
+		#addCoverBtn {
+			display: block;
+			bottom: 9px;
+		}
+	}
+
+	#addCoverBtn {
+		position: absolute;
+		z-index: 1;
+		left: 10px;
+		display: none;
+		font-weight: 300;
+		padding: 4px 15px;
+		font-size: 13px;
+		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+
+		@media ( max-width: 922px ) {
+			top: 10px;
+			bottom: unset !important;
+		}
+
+		@media ( max-width: $breakpoint-small ) {
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+
+		.icon {
+			padding-right: 5px;
+		}
+	}
+
+	.profile-img {
+		margin: 40px auto 18px;
+		padding: 5px;
+		position: relative;
+		display: inline-block;
+
+		@media ( max-width: $breakpoint-mobile ) {
+			max-width: 250px;
+			margin-top: 30px;
+		}
+
+
+		&.editOn {
+			/* border: 1px dashed #848598; */
+			/* padding: 10px; */
+
+			#editImageBtn {
+				display: block;
+			}
+
+			input,
+			input::placeholder {
+				color: #353554;
+			}
+		}
+
+		img {
+			max-height: 300px;
+			max-width: 300px;
+			border: 3px solid #ffffff;
+			width: 100%;
+			height: 100%;
+
+			&.square {
+
+				border-radius: 10px;
+			}
+		}
+
+		#editImageBtn {
+			span {
+				padding-right: 5px;
+			}
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-weight: 300;
+			padding: 3px 12px;
+			letter-spacing: 0.5px;
+			font-size: 13.5px;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	div.name {
+		margin: auto;
+		font-size: 23px;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
+		position: absolute;
+		bottom: -82px;
+		background: rgb(55, 53, 84);
+		padding-bottom: 15px;
+
+		.resizing-input input, .resizing-input span {
+			&.editOff {
+				display: none;
+			}
+
+			&.editOn {
+				white-space: pre;
+				min-width: 100%;
+				text-align: center;
+				font-size: 18px;
+				background: transparent;
+				padding: 2px 10px;
+				color: #353554;
+				border: none;
+				text-transform: uppercase;
+				line-height: auto;
+
+				/* border: 1px dashed #848598; */
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			&::placeholder {
+				color: #353554;
+			}
+
+		}
+
+		span {
+			&.editOn {
+				display: none;
+			}
+		}
+	}
+
+	.rating {
+		display: block;
+		line-height: 1;
+
+		a {
+			color: #E6D9D1;
+			font-size: 22px;
+
+			&:hover,
+			&:hover:after {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.heart {
+		float: right;
+		color: #E65C63;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+.wb-cover-couple {
+	@extend .wb-cover;
+	background-color: #E7D8D1;
+	position: relative;
+
+	.details {
+		&.editOff {
+			.resizing-input {
+				display: none;
+			}
+		}
+	}
+
+	div.name {
+		color: $brand-primary;
+	}
+
+	&.editOns {
+		.profile-img {
+			padding: 4px;
+			width: 181px;
+			border-color: #000;
+		}
+
+		.name .resizing-input input {
+			font-size: 23px;
+			min-width: 530px;
+			color: #000;
+			border-color: #000;
+			margin-bottom: 10px;
+		}
+
+		.details {
+			&.editOn {
+				.resizing-input input {
+					min-width: 293px;
+					text-align: center;
+					background-color: transparent;
+
+					/* border: 1px dashed #000; */
+
+					&.date {
+						display: block;
+						margin: 0px auto;
+						border-top: none;
+					}
+
+					&:focus {
+						outline: none;
+					}
+				}
+
+				.venue, .date {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.name {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+		font-size: 18px;
+		background: $brand-warning;
+		margin: 0;
+		padding: 10px;
+		color: $brand-primary;
+	}
+
+	.details {
+		color: #000000;
+		font-family: $font-family-sans-serif;
+		font-weight: 300;
+	}
+}
+
+.wb-cover-vendor {
+	@extend .wb-cover;
+	background-color: #373554;
+	background-size: cover;
+
+	.name {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+		font-size: 18px;
+		margin: 0;
+		padding: 10px;
+		padding-bottom: 5px;
+
+		span,
+		.resizing-input input.editOn {
+			background: transparent;
+			box-shadow: none;
+			border-radius: 0;
+			color: #ffffff;
+			font-size: 23px;
+		}
+
+		.resizing-input input,
+		.resizing-input span {
+			&::placeholder {
+				color: #fff;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.wb-cover-quote {
+	@extend .wb-cover;
+
+	background-color: #ffffff;
+	border-bottom: 1px solid #DBDBDB;
+	padding: 33px 50px 37px;
+
+	.wb-btn-outline-danger {
+		padding: 7px 23px;
+		margin-bottom: 10px;
+	}
+}
+
+.cover-location {
+	color: #666666;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.1px;
+
+	&.location {
+		margin: 5px auto;
+		.resizing-input {
+			position: relative;
+
+			&.editOff {
+				display: none;
+			}
+
+			.icon {
+				position: absolute;
+				top: 17px;
+				transform: translateY(-50%);
+				padding: 10px;
+			}
+
+			input,
+			textarea {
+				&:focus {
+					outline: none;
+				}
+				color: #D2D2D2;
+				font-size: 14px;
+				white-space: pre;
+				background-color: transparent;
+				padding: 5px;
+				padding-left: 24px;
+				min-width: 295px;
+				text-align: left;
+				resize: vertical;
+
+				/* border: 1px dashed #848598; */
+			}
+		}
+
+		.loc-value {
+			font-weight: 300;
+			text-transform: capitalize;
+			color: $brand-primary;
+			font-size: 14px;
+		}
+
+		.name {
+			margin-bottom: 7px;
+			background: #fff;
+			padding: 2px 10px;
+			box-shadow: 0 0 10px 5px #fff;
+			border-radius: 100px;
+			color: #353554;
+
+			&.editOn {
+				display: none;
+			}
+		}
+	}
+}
+
+.crop_active .overlay-alt {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+	opacity: 0.8;
+	transition: 150ms;
+}
+
+@media ( max-width: $breakpoint-mobile ) {
+	.wb-expertise .overfy {
+		overflow-y: auto;
+		max-height: 61vh;
+		margin-top: 88px;
+		margin-bottom: -31px;
+
+		.action {
+			margin-top: -26px;
+		}
+	}
+}

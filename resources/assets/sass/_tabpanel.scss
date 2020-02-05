@@ -1,0 +1,607 @@
+.wb-tab {
+
+	.nav-tabs > li > a {
+		border: 0;
+		margin-right: 0;
+		color: #969696;
+		padding: 10px 30px;
+		font-family: $font-family-slab;
+		font-size: 24px;
+
+		@media ( max-width: 420px ) {
+			padding: 5px 10px;
+
+			.section-postJob & {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.nav-tabs > li > a > i {
+		color: #a6a6a6;
+	}
+
+	.nav-tabs > li.open, .nav-tabs > li:hover {
+		border-bottom: 2px solid $brand-danger;
+	}
+
+	.nav-tabs > li.open > a, .nav-tabs > li:hover > a {
+		border: 0;
+		background: none !important;
+		color: $brand-danger;
+	}
+
+	.nav-tabs > li.open > a > i, .nav-tabs > li:hover > a > i {
+		color: $brand-danger;
+	}
+
+	.nav-tabs > li.open .dropdown-menu, .nav-tabs > li:hover .dropdown-menu {
+		margin-top: 0px;
+	}
+
+	.nav-tabs > li.active {
+		border-bottom: 2px solid $brand-danger;
+		position: relative;
+	}
+
+	.nav-tabs > li.active > a {
+		background-color: transparent;
+		border: 0;
+		color: $brand-danger;
+	}
+
+	.nav-tabs > li.active > a > i {
+		color: #404040;
+	}
+
+	.tab-content {
+		margin-top: -3px;
+		background-color: #fff;
+		box-shadow: rgb(221, 221, 221) 0px 0px 4px;
+		padding: 15px 0;
+	}
+
+}
+
+.wb-tab-job {
+	@extend .wb-tab;
+	.nav-tabs > li {
+		margin: 2px;
+	}
+
+	.nav-tabs {
+		border: none;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		text-align: center;
+	}
+	.tab-content {
+		.tab-pane {
+			text-align: center;
+
+			@media ( max-width: 420px ) {
+				width: 100%;
+				margin-top: 0;
+				padding: 0 15px;
+			}
+		}
+
+		.content-wrapper {
+			margin: auto;
+			max-width: 700px;
+			background-color: #fff;
+		}
+
+		.sub-header {
+			margin-top: 50px;
+			font-size: 16px;
+			margin-bottom: 10px;
+			font-weight: 300;
+		}
+
+		.btn-block {
+			margin: 20px 0px 28px;
+
+			button {
+				margin: 0px 3px;
+			}
+		}
+
+		.wb-form-group {
+			display: inline-block;
+			margin-bottom: 15px;
+
+			@media ( max-width: 420px ) {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+
+			input, select, textarea {
+				border: 1px solid #ccd0d2;
+			}
+			
+			input {
+				font-size: 16px;
+				font-weight: 100;
+				color: #000;
+
+				&:focus {
+					border-bottom: 1px solid $brand-danger;
+
+					& + label {
+						color: $brand-danger !important;
+					}
+				}
+			}
+
+			label {
+				display: inline-block;
+				max-width: 100%;
+				font-weight: 100;
+				margin-top: 8px;
+				color: #43453F;
+				font-size: 12px;
+				letter-spacing: 0.3px;
+			}
+		}
+
+		.action-buttons {
+			display: inline-block;
+			margin: 0 0px 30px;
+
+			@media ( max-width: 480px ) {
+				margin: 30px 0px 20px;
+			}
+
+			.btn,
+			button {
+				margin: 2px 8px;
+
+				@media ( max-width: 480px ) {
+					font-size: 12px;
+					padding: 0;
+					width: auto;
+					min-width: 103px;
+				}
+			}
+		}
+
+		.gallery {
+			margin-bottom: 30px;
+
+			.item {
+				display: inline-block;
+				margin: 9px 4px;
+				img {
+					border: 1px solid #DBDBDB;
+					border-radius: 3px;
+				}
+			}
+		}
+
+		.title {
+			margin: 0px;
+			border-bottom: 1px solid #eee;
+			padding: 25px;
+			font-size: 24px;
+			color: $brand-primary;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: 400;
+
+			@media ( max-width: 420px ) {
+				.section-postJob & {
+					font-size: 16px;
+				}
+			}
+		}
+
+		.tagsinput {
+			border: 1px solid #DBDBDB;
+			border-radius: 3px;
+			.tag {
+				margin: 2px;
+				background-color: #F4F4F4;
+				color: #727272;
+				border-color: #E4E4E4;
+				font-size: 12px;
+				padding: 1px 8px;
+
+				span {
+					margin-left: 5px;
+				}
+				a {
+					color: #BFC6CF;
+					float: left;
+				}
+			}
+		}
+	}
+}
+
+.wb-tab-send-quote {
+	@extend .wb-tab;
+
+	.nav-tabs {
+		border: none;
+		margin: -1px;
+		display: flex;
+		justify-content: right;
+		flex-direction: row;
+		text-align: center;
+
+		& > li > a {
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+
+		& > li.active {
+			border-bottom: 3px solid $brand-danger;
+			& > a {
+				font-weight: 600;
+			}
+		}
+
+		& > li:hover {
+			border-bottom: 3px solid $brand-danger;
+		}
+	}
+
+	.tab-content {
+		box-shadow: none;
+		border-top: 1px solid #E7E7E7;
+
+		@media ( max-width: 420px ) {
+			border: none;
+		}
+
+		.sub-header {
+			margin-top: 18px;
+			font-size: 16px;
+			color: $brand-primary;
+			display: inline-block;
+			padding-right: 11px;
+		}
+
+		small {
+			clear: both;
+			display: block;
+		}
+
+		.content-wrapper {
+			margin-left: 0px;
+			background-color: #fff;
+
+			small {
+				font-size: 12px;
+				color: #000;
+				font-weight: 100;
+			}
+
+			.form-group {
+				small {
+					@extend small;
+				}
+			}
+
+			.wb-notes {
+				margin-top: 8px;
+
+				.toolbar {
+					background-color: #fff;
+					border-bottom: none;
+				}
+
+				text-area {
+					padding: 15px;
+				}
+			}
+
+			.terms-block {
+				.bootstrap-select {
+					width: 290px !important;
+					margin-right: 8px;
+					span {
+						font-weight: 100;
+					}
+
+					.dropdown-menu > ul > li > a {
+						padding-left: 10px;
+					}
+				}
+
+				.wb-btn-disabled {
+					padding: 2px 16px;
+					height: 29px;
+					margin-top: -2px;
+				}
+
+				input[type="text"] {
+					height: 29px;
+					width: 178px;
+					border: 1px solid #DBDBDB;
+					margin-right: 8px;
+				}
+			}
+
+			.upload-file-block{
+				.logo-wrapper {
+					height: 120px;
+					width: 150px;
+					border: 1px solid #dbdbdb;
+					border-radius: 3px;
+					padding: 10px;
+					margin-top: 5px;
+					margin-bottom: 15px;
+				}
+				button {
+					padding: 5px 15px;
+				}
+
+			}
+
+		}
+	}
+}
+
+.wb-tab-accept {
+	.nav-tabs {
+		background-color: transparent;
+
+		li {
+
+			&.active > a,
+			& > a:visited {
+				background-color: #E7D8D1;
+				color: $brand-primary;
+			}
+			& > a,
+			& > a:visited {
+				background-color: #e7d8d1!important;
+				padding: 8px 2px;
+				font-size: 12px;
+				color: #353554!important;
+				border-color: white;
+
+				&.tab-coral {
+					background: $brand-danger;
+					color: #fff;
+				}
+
+				&.tab-pink {
+					background: $brand-ivory;
+				}
+
+				&.tab-navy {
+					background: $brand-primary;
+					color: #fff;
+				}
+			}
+
+			// &.active {
+			// 	background-color: #E7D8D1;
+			// 	color: $brand-primary;
+			// }
+			@media ( min-width: 460px ) {
+				display: table-cell;
+				width: 1%;
+			}
+		}
+	}
+
+	p,
+	a {
+		color: $brand-primary;
+	}
+	
+	.tab-content {
+		padding: 23px 25px;
+		border: 1px solid #DBDBDB;
+		border-top: none;
+		background-color: #fcfbf7;
+		margin-left: 0px;
+
+		&.quote-res {
+			background-color: #E7D8D1;
+		}
+
+		.wb-title-quote {
+			font-size: 26px;
+			font-family: "Josefin Slab";
+			margin: 0;
+			display: inline-block;
+			font-weight: 600;
+			color: #373654;
+			text-transform: uppercase;
+		}
+
+		.select-quote {
+			color: $brand-primary;
+			text-transform: uppercase;
+			font-weight: bold;
+			padding: 15px 10px;
+			margin: 15px 0;
+			background: url('../images/angle-down-16.png') 96% / 20px no-repeat #fff;
+		}
+
+		.description {
+			font-size: 11px;
+			font-weight: 100;
+		}
+
+		.checkbox {
+			font-weight: 100;
+		}
+	}
+}
+
+.response-block .wb-tab-accept .nav-tabs {
+	li {
+		a {
+			padding: 8px;
+			margin: 0;
+		}
+	}
+}
+
+.wb-tab-invoice {
+	@extend .wb-tab;
+
+	.nav-tabs {
+		border: none;
+		margin: -1px;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		text-align: center;
+
+		& > li {
+			margin: 2px 17px;
+			padding-top: 2px;
+		}
+
+		& > li > a {
+			padding: 5px 0px;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+		}
+
+		& > li.active {
+			border-bottom: 2px solid $brand-danger;
+			padding-top: 0px;
+			& > a {
+				font-weight: 600;
+			}
+
+			&:hover {
+				padding-top: 2px;
+			}
+		}
+
+		& > li:hover {
+			border-bottom: 2px solid $brand-danger;
+			& > a {
+				padding-top: 3px;
+				font-weight: 600;
+			}
+		}
+	}
+
+	.tab-content {
+		padding: 18px 0px;
+		box-shadow: none;
+		border-top: 1px solid #ddd;
+
+		.action-button {
+			text-align: center;
+			padding: 60px 15px 15px;
+
+			.btn {
+				padding: 12px 50px;
+				font-weight: 500;
+				font-size: 13.5px;
+				letter-spacing: 0.5px;
+			}
+		}
+
+		.item-block {
+			padding-top: 14px;
+			p {
+				margin: 0px;
+				font-weight: 100;
+				color: #000;
+
+				.wb-text-grey {
+					font-size: 13px;
+					font-weight: 500;
+				}
+				&.lead {
+					font-size: 14px;
+					color: #000;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+
+}
+
+.wb-tab-messages {
+	@extend .wb-tab;
+
+	.nav-tabs {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		text-align: center;
+
+		& > li > a {
+			font-size: 17px;
+			font-weight: 600;
+			padding: 10px 0px;
+		}
+
+		& > li:active {
+			border-bottom-width: 3px;
+		}
+
+		.list-separator {
+			content: ' ';
+			width: 2px;
+			height: 16px;
+			border-left: 1px solid #dbdbdb;
+			margin: 15px 45px;
+		}
+	}
+
+	.tab-content {
+		margin-top: 30px;
+	}
+
+	.tab-content {
+		padding: 0px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.wb-tab-send-quote,
+	#wb-single-quote {
+		.table-responsive {
+			border: none;
+		}
+
+		input,
+		input.costs {
+			width: 100% !important;
+			max-width: 100%;
+			display: inline;
+		}
+	}
+
+	#wb-single-quote .propose-payment-block input[type="checkbox"],
+	#wb-single-quote .response-block input[type="radio"],
+	#wb-single-quote .response-block input[type="checkbox"],
+	#wb-single-quote .response-block br {
+		display: none;
+	}
+
+	#wb-single-quote .response-block .paymethod {
+		border-top: 1px solid #DBDBDB;
+	}
+
+	tr:first-of-type td.dollarwrapper input.costs  {
+		display: block;
+	}
+
+	tr:first-of-type .dollarwrapper span.dollarsign {
+		top: 33px;
+	}
+
+	#wb-single-quote .details-block ul {
+		column-count: 1 !important;
+	}
+}

@@ -1,0 +1,37 @@
+.rating,
+.rating a {
+	font-size: 22px;
+}
+
+.rating.small,
+.rating.small a {
+	font-size: 12px!important;
+}
+
+.rating a,
+.rating a .fa {
+	color: $brand-dustypink;
+}
+
+.rating a.hover,
+.rating a.selected,
+.rating a.selected .fa,
+.rating a.hover .fa {
+	color: $brand-dustypink;
+}
+
+.rating a:not(.selected) .fa {
+	color: $brand-dustypink;
+}
+
+.rating a:not(.selected) {
+	.fa {
+		display: none;
+	}
+
+	&:after {
+		content: '\f006';
+		font-family: Fontawesome;
+		text-decoration: none;
+	}
+}

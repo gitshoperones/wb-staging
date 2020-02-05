@@ -1,0 +1,156 @@
+$action-banner-bride: url('../images/banners/default.png');
+$action-post-job: url('../images/banners/post_job.jpg');
+$action-view-job: url('../images/banners/view_job.jpg');
+$action-banner-groom: url('../images/banners/action.png');
+$action-banner-join-us: url('../images/banners/join_us.jpg');
+$action-banner-sign-in: url('../images/banners/sign_in.jpg');
+$action-banner-messages: url('../images/banners/messages.jpg');
+$action-banner-quote: url('../images/banners/quote.jpg');
+$action-edit-quote: url('../images/banners/edit_quote.jpg');
+$action-create-quote: url('../images/banners/create_quote.jpg');
+$action-invoice: url('../images/banners/invoice.jpg');
+$banner-how-it-works: url('../images/banners/how_it_works.jpg');
+$banner-contact: url('../images/banners/contact_us.jpg');
+$banner-faqs: url('../images/banners/faqs.jpg');
+$banner-suppliers: url('../images/banners/suppliers.jpg');
+$banner-about: url('../images/banners/about.jpg');
+$banner-blog: url('../images/banners/blog.jpg');
+$banner-blog-archive: url('../images/banners/blog-archive.jpg');
+$banner-privay-policy: url('../images/banners/privay_policy.jpg');
+$banner-com-guides: url('../images/banners/com_guide.jpg');
+$banner-terms: url('../images/banners/terms.jpg');
+
+
+.wb-action-banner {
+	height: 130px;
+	font-size: 36px;
+	text-align: center;
+	padding: 40px 0px;
+	font-family: $font-family-slab;
+	font-weight: 600;
+	position: relative;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+
+	&.wb-bg-bride {
+		background-image: $action-banner-bride;
+		color: #000;
+	}
+
+	&.wb-edit-quote {
+		background-image: $action-edit-quote;
+		color: #000;
+	}
+
+	&.wb-invoice {
+		background-image: $action-invoice;
+		color: #000;
+	}
+
+	&.wb-bg-quote {
+		background-image: $action-banner-quote;
+		color: #000;
+	}
+
+	&.wb-create-quote {
+		background-image: $action-create-quote;
+		color: #000;
+	}
+
+	&.wb-bg-messages {
+		background-image: $action-banner-messages;
+		color: #000;
+	}
+
+	&.post-job {
+		background-image: $action-post-job;
+		color: #fff;
+	}
+
+	&.wb-bg-groom {
+		background-image: $action-banner-groom;
+		color: #fff;
+	}
+
+	&.wd-get-in-touch {
+		background-image: $banner-contact;
+	}
+
+	&.wd-view-job {
+		background-image: $action-view-job;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: transparentize(#fff, .7);
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	span {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.wb-small-banner {
+	background-image: $small-banner;
+	height: 312px;
+	background-size: cover;
+	background-position: center top!important;
+	position: relative;
+
+	&.wd-blog-archive {
+		background-image: $banner-blog-archive;
+	}
+
+	&.wb-join-us {
+		background-image: $action-banner-join-us;
+		color: #fff;
+	}
+
+	&.wb-sign-in {
+		background-image: $action-banner-sign-in;
+		color: #fff;
+	}
+
+	&.wd-how-it-works {
+		background-image: $banner-how-it-works;
+	}
+
+	&.wd-get-in-touch {
+		background-image: $banner-contact;
+	}
+
+	&.wd-faqs {
+		background-image: $banner-faqs;
+	}
+
+	&.wd-suppliers {
+		background-image: $banner-suppliers;
+	}
+
+	&.wd-about {
+		background-image: $banner-about;
+	}
+
+	&.wd-blog {
+		background-image: $banner-blog;
+	}
+
+	&.wd-privay-policy {
+		background-image: $banner-privay-policy;
+	}
+
+	&.wd-com-guide {
+		background-image: $banner-com-guides;
+	}
+	&.wd-terms {
+		background-image: $banner-terms;
+	}
+}

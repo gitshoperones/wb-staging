@@ -1,0 +1,191 @@
+#wb-about {
+	text-align: left;
+	padding: 0;
+
+	.footer-about {
+		width: 90%;
+		margin: auto;
+		border-bottom: 1px solid #E7D8D1;
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+
+	.item {  
+		@media ( max-width: $breakpoint-small ) {
+			padding-bottom: 14px;
+			margin-bottom: 21px;
+			width: 100%;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+
+	.title {
+		font-size: 16px;
+		font-family: $font-family-slab;
+		font-weight: bold;
+		margin-bottom: 10px;
+		color: $brand-ivory2;
+		text-transform: uppercase;
+		color: $brand-dustypink;
+
+		@media ( max-width: $breakpoint-small ) {
+			font-size: 15.4px;
+		}
+	}
+
+	.details {
+		color: #f3f3f3;
+		font-weight: 300;
+	}
+
+	ul > li {
+		text-transform: capitalize;
+	}
+
+	ul > li > a {
+		display: block;
+		padding: 4px 0px;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 300;
+
+		@media ( max-width: $breakpoint-small ) {
+			font-size: 12.5px;
+			padding: 3px 0px;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.key-links {
+	background-color: $brand-primary;
+	color: $brand-ivory2;
+	text-align: center;
+	padding: 50px 0 30px;
+	text-transform: uppercase;
+
+	.links {
+		padding: 0 50px;
+		margin: auto;
+	}
+
+	p {
+		margin: 0 0 20px;
+	}
+	
+	a {
+		font-size: 14px;
+		color: $brand-ivory2;
+		font-weight: 300;
+		display: inline-block;
+		
+		@media ( max-width: $breakpoint-mobile ) {
+			display: inline;
+		}
+	}
+}
+
+.subscribe-form {
+	text-align: center;
+	padding: 0;
+
+	.text {
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+
+	.d-flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media ( max-width: $breakpoint-mobile ) {
+			display: block;
+			padding: 0 30px;
+		}
+
+		form {
+			margin-bottom: 20px;
+		}
+	}
+
+	.btn {
+		margin: 5px 0;
+		padding: 5px 20px;
+		font-weight: 400;
+	}
+
+	.form-control {
+		font-weight: 300;
+		color: $brand-primary;
+
+		&::placeholder {
+			color: $brand-primary;
+		}
+	}
+}
+.site-footer {
+	font-size: 14px;
+	color: $brand-ivory2;
+	font-weight: 300;
+	background-color: $brand-primary;
+	border-top: 1px solid $brand-warning;
+	padding: 30px 0;
+
+	.copy-contain {
+		width: 90%;
+		margin: auto;
+		padding: 0;
+	}
+
+	a {
+		font-size: 14px;
+		color: $brand-ivory2;
+		font-weight: 300;
+	}
+
+	@media ( max-width: $breakpoint-small ) {  
+		text-align: center;
+
+		a {
+			font-size: 12px;
+		}
+
+		.item {
+			font-size: 12px;
+			text-align: center;
+		}
+	}
+
+	@media ( max-width: $breakpoint-mobile ) {
+		padding: 20px 0 30px;
+
+		.logo-footer {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.social {
+	background-color: $brand-primary;
+	font-size: 30px;
+	text-align: right;
+
+	a {
+		color: $brand-warning;
+		margin: 0 5px;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	@media ( max-width: $breakpoint-small ) {
+		text-align: center;
+		padding: 20px 0;
+		line-height: 1;
+	}
+}
