@@ -20,7 +20,7 @@
     },
     "dependencies": {
         "moment": "^2.20.1",
-        "node-sass": "^4.12.0",
+        "node-sass": "^4.13.1",
         "webpack-stream": "jeroennoten/webpack-stream#patch-1"
     }
 }

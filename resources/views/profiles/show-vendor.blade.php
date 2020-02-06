@@ -22,6 +22,8 @@
 
 				@include('partials.profiles.description')
 
+				@include('partials.profiles.google-reviews')
+
 				@include('partials.profiles.packages')
 				
 				@include('partials.profiles.gallery')
