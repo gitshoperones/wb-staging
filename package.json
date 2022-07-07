@@ -19,7 +19,7 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "moment": "^2.20.1",
+        "moment": "^2.29.4",
         "node-sass": "^4.12.0",
         "webpack-stream": "jeroennoten/webpack-stream#patch-1"
     }
